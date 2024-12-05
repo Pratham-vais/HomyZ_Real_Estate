@@ -1,0 +1,45 @@
+.f-container{
+    justify-content: space-between;
+
+}
+.f-left{
+    gap:1rem;
+
+
+
+}
+.f-menu{
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    
+}
+.f-wrapper{
+    background-color: antiquewhite;
+}
+.f-left>img:hover{
+    transition: all 300ms ease-in;
+    
+    animation: wwe 800ms ease-out 2 both alternate-reverse;
+}
+@keyframes wwe{
+    0%{
+        scale:0;
+        mix-blend-mode: normal;
+    }
+    
+    100%{
+        mix-blend-mode:difference;
+        scale:1.2;
+    }
+}
+
+@media(max-width:768px){
+    .f-container{justify-content: center;
+    }
+    .f-container>div{
+        align-items: center!important;
+        text-align: center;
+        
+    }
+}
